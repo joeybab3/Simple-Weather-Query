@@ -7,5 +7,4 @@
   $thunder = 'Thunder here';
   $sunny = '';
         
-
 $xml = simplexml_load_file($url); $currentweather = $xml->weather; switch (true) { case stristr( $currentweather, "Thunderstorm" ): echo $thunder; break; case stristr( $currentweather, "Snow" ): case stristr( $currentweather, "Hail" ): echo $snow; break; case stristr( $currentweather, "Rain" ): case stristr( $currentweather, "Drizzle" ): case stristr ($currentweather, "Light Rain" ); case stristr( $currentweather, "Showers" ): echo $rain; break; case stristr( $currentweather, "Fog" ): case stristr( $currentweather, "Haze" ): case stristr( $currentweather, "Smoke" ): echo $fog; break; default: echo $sunny; break; } ?>
