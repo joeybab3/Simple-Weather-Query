@@ -1,7 +1,7 @@
-Simple-Weather-Query
+Simple Weather Query in php.
 ====================
 
-A simple weather query script that echoes based on what the weather for your area is.
+A simple weather query script that echoes based on what the weather for your area is. Based off of http://gearside.com/make-it-rain-let-it-snow-query-weather-with-php/
 
 **Read
 
