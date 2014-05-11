@@ -1,10 +1,10 @@
 <?
-$zipcode = '92011'; //Either set this to a zip code, or you can make it dynamic
+$zipcode = 'ziphere'; //Either set this to a zip code, or you can make it dynamic
 $rain = '<script type=\"text/javascript\" src=\'http://joeybabcock.me/js/rainfall.js\';></script>'; 
 $snow = '<script type=\"text/javascript\" src=\'http://joeybabcock.me/js/snowfall.js\';></script>';
 $fog = 'Your Fog Here';
 $thunder = 'Thunder here';
-$sunny = 'Skimmets';
+$sunny = 'Default(sunny) here';
 
 
 $url = 'http://weather.yahooapis.com/forecastrss?p=' . $zipcode; //fetch the xml file
