@@ -1,9 +1,9 @@
 <?php
   //  http://joeybabcock.me/projects/posts/2014/05/08/php-actual-weather-query-script/  
   $url = 'http://w1.weather.gov/xml/current_obs/KCRQ.xml'; //go to http://w1.weather.gov/xml/current_obs/seek.php?state=ca&Find=Find to get your url, click on the xml one and copy it.
-  $rain = '<script type=\"text/javascript\" src=\'http://joeybabcock.me/js/rainfall.js\';></script>';
-  $snow = '<script type=\"text/javascript\" src=\'http://joeybabcock.me/js/snowfall.js\';></script>';
-  $fog = 'Your Fog Here';
+  $rain = '<script type=\"text/javascript\" src=\'http://joeybabcock.me/js/rainfall.js\';></script>';//What to show during rain...
+  $snow = '<script type=\"text/javascript\" src=\'http://joeybabcock.me/js/snowfall.js\';></script>';//Snow
+  $fog = 'Your Fog Here';//Fog, etc...
   $thunder = 'Thunder here';
   $sunny = '';
         
