@@ -1,12 +1,12 @@
 <?php 
-  //  http://joeybabcock.me/projects/posts/2014/05/08/php-actual-weather-query-script/ For more info 
+  //  https://joeybabcock.me/projects/posts/2014/05/08/php-actual-weather-query-script/ For more info 
   $zipcode = 92011; //put your zipcode here(or set it dynamically from the user's information)
   
   $rainlight = '
   <script type="text/javascript">
   var script = document.createElement( \'script\' );
   script.type = \'text/javascript\';
-  script.src = \'http://joeybabcock.me/js/rainfall1.js\';
+  script.src = \'https://joeybabcock.me/js/rainfall1.js\';
   $("#nav").prepend(script);
   </script>';//Light rain script
   
@@ -14,35 +14,35 @@
   <script type="text/javascript">
   var script = document.createElement( \'script\' );
   script.type = \'text/javascript\';
-  script.src = \'http://joeybabcock.me/js/rainfall2.js\';
+  script.src = \'https://joeybabcock.me/js/rainfall2.js\';
   $("#nav").prepend(script);
   </script>';//Heavy rain
   
-  $snow = '<script type="text/javascript" src=\'http://joeybabcock.me/js/snowfall.js\'></script>';//Snow script
+  $snow = '<script type="text/javascript" src=\'https://joeybabcock.me/js/snowfall.js\'></script>';//Snow script
   
   $fog = '<style type="text/css">#viewport{-webkit-filter: blur(1px);filter: blur(1px);}</style>';//Blurs the screen slightly
   
-  $thunder = "<script type='text/javascript' src='http://joeybabcock.me/js/weather/lightning-weather.js'></script>"; //a script for fun
+  $thunder = "<script type='text/javascript' src='https://joeybabcock.me/js/weather/lightning-weather.js'></script>"; //a script for fun
   
   $sunny = ''; //nothing but the clouds
   
   $thunds = false;//Set to true for later addition of the canvas overlay
   
   /* various cloud numbers/colors */
-  $clouds = "<script>var  NUM_CLOUDS = 30;var type = 1;</script><script type='text/javascript' src='http://joeybabcock.me/js/weather/clouds.js'></script>";
-  $cloudsthin = "<script>var  NUM_CLOUDS = 8;var type = 1;</script><script type='text/javascript' src='http://joeybabcock.me/js/weather/clouds.js'></script>";
-  $cloudsuthin = "<script>var  NUM_CLOUDS = 4;var type = 1;</script><script type='text/javascript' src='http://joeybabcock.me/js/weather/clouds.js'></script>";
-  $cloudsdark = "<script>var  NUM_CLOUDS = 50;var type = 3;</script><script type='text/javascript' src='http://joeybabcock.me/js/weather/clouds.js'></script>";
-  $cloudsmed = "<script>var  NUM_CLOUDS = 50;var type = 2;</script><script type='text/javascript' src='http://joeybabcock.me/js/weather/clouds.js'></script>";
-  $cloudsfog = "<script>var  NUM_CLOUDS = 80;var type = 1;</script><script type='text/javascript' src='http://joeybabcock.me/js/weather/clouds.js'></script>";
+  $clouds = "<script>var  NUM_CLOUDS = 30;var type = 1;</script><script type='text/javascript' src='https://joeybabcock.me/js/weather/clouds.js'></script>";
+  $cloudsthin = "<script>var  NUM_CLOUDS = 8;var type = 1;</script><script type='text/javascript' src='https://joeybabcock.me/js/weather/clouds.js'></script>";
+  $cloudsuthin = "<script>var  NUM_CLOUDS = 4;var type = 1;</script><script type='text/javascript' src='https://joeybabcock.me/js/weather/clouds.js'></script>";
+  $cloudsdark = "<script>var  NUM_CLOUDS = 50;var type = 3;</script><script type='text/javascript' src='https://joeybabcock.me/js/weather/clouds.js'></script>";
+  $cloudsmed = "<script>var  NUM_CLOUDS = 50;var type = 2;</script><script type='text/javascript' src='https://joeybabcock.me/js/weather/clouds.js'></script>";
+  $cloudsfog = "<script>var  NUM_CLOUDS = 80;var type = 1;</script><script type='text/javascript' src='https://joeybabcock.me/js/weather/clouds.js'></script>";
   /* Rain Sounds */
-  $rainsoundslib ="<script src='http://joeybabcock.me/js/buzz.min.js'></script>";
-  $rainsounds = '<script>var mySound = new buzz.sound( "http://joeybabcock.me/audio/rain", {
+  $rainsoundslib ="<script src='https://joeybabcock.me/js/buzz.min.js'></script>";
+  $rainsounds = '<script>var mySound = new buzz.sound( "https://joeybabcock.me/audio/rain", {
     formats: [ "ogg", "mp3" ] });
 mySound.play().fadeIn().loop().setVolume(50);</script>
 ';
 		
-$url = 'http://weather.yahooapis.com/forecastrss?p=' . $zipcode . '&u=f';//Url to weather XML file(thanks to yahoo)
+$url = 'https://weather.yahooapis.com/forecastrss?p=' . $zipcode . '&u=f';//Url to weather XML file(thanks to yahoo)
 $use_errors = libxml_use_internal_errors(true);
 $string = file_get_contents($url);
 $xml = simplexml_load_string($string);
