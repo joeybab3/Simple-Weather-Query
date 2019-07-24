@@ -1,7 +1,9 @@
 Simple Weather Query in php.
 ====================
 
-A simple weather query script that echoes based on what the weather for your area is. Originally based off of http://gearside.com/make-it-rain-let-it-snow-query-weather-with-php/
+**Note literally none of this works anymore
+
+A simple weather query script that echoes based on what the weather for your area is. Originally based off of https://gearside.com/make-it-rain-let-it-snow-query-weather-with-php/
 
 v0.3:
 
@@ -19,5 +21,5 @@ v0.2:
 
 **Read(NOT NEEDED ANYMORE, USE ONLY FOR OLD SCRIPT)
 
-Go to http://w1.weather.gov/xml/current_obs/seek.php?state=ca&Find=Find ,
+Go to https://w1.weather.gov/xml/current_obs/seek.php?state=ca&Find=Find ,
 to get your url, click on the xml link, and copy it. Replace $url with your url. That's it!!
